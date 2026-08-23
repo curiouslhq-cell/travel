@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>京都大阪五天四晚行程｜2026年9月</title>
+  <style>
+    :root { --ink:#18322d; --muted:#5f706b; --paper:#fffdf7; --line:#e5ded2; --accent:#bd4f38; --green:#356f61; --wash:#f2eee4; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:#e9e4d8; color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; line-height:1.65; }
+    .wrap { max-width:1080px; margin:0 auto; padding:40px 22px 64px; }
+    header { padding:38px 34px; background:linear-gradient(125deg,#e4c6a2,#f9f0df 60%,#c9d8c4); border-radius:22px; }
+    h1 { margin:0 0 8px; font-size:clamp(30px,5vw,52px); letter-spacing:.02em; }
+    h2 { margin:42px 0 16px; font-size:26px; }
+    h3 { margin:0 0 6px; font-size:20px; }
+    p { margin:0 0 12px; }
+    .lede,.note { color:var(--muted); }
+    .note { font-size:14px; }
+    .chips { display:flex; gap:8px; flex-wrap:wrap; margin-top:18px; }
+    .chip { padding:5px 10px; background:#ffffffaa; border-radius:999px; font-size:14px; }
+    .day { margin:20px 0; background:var(--paper); border:1px solid var(--line); border-radius:18px; overflow:hidden; box-shadow:0 6px 22px #453c2b12; }
+    .day-title { display:flex; justify-content:space-between; gap:15px; align-items:baseline; padding:17px 22px; background:var(--wash); }
+    .day-title strong { font-size:21px; }
+    .stay { color:var(--green); font-size:14px; font-weight:700; white-space:nowrap; }
+    .day-content { display:grid; grid-template-columns:minmax(0,1.45fr) minmax(275px,.8fr); gap:0; align-items:stretch; }
+    .schedule { width:100%; border-collapse:collapse; }
+    .schedule th,.schedule td { padding:13px 18px; border-top:1px solid var(--line); vertical-align:top; text-align:left; }
+    .schedule th { width:128px; color:var(--accent); font-weight:700; }
+    .schedule tr:first-child th,.schedule tr:first-child td { border-top:0; }
+    .gallery { display:grid; gap:12px; padding:16px; background:#fbf8f1; border-left:1px solid var(--line); align-content:start; }
+    .spot { background:var(--paper); border:1px solid var(--line); border-radius:16px; overflow:hidden; }
+    .spot img { width:100%; height:150px; object-fit:cover; display:block; background:var(--wash); }
+    .spot-body { padding:16px; }
+    a { color:#9b3828; font-weight:700; text-decoration-thickness:1px; text-underline-offset:3px; }
+    .transport { padding:20px 22px; background:#e5eee9; border-radius:16px; }
+    .route-panel { margin:22px 0 34px; padding:22px; background:var(--paper); border:1px solid var(--line); border-radius:18px; }
+    .google-map { width:100%; height:460px; border:1px solid var(--line); border-radius:12px; margin-top:14px; }
+    .place-detail { display:grid; grid-template-columns:150px 1fr; gap:16px; margin-top:14px; padding:14px; border:1px solid var(--line); border-radius:12px; background:#fbf8f1; min-height:120px; }
+    .place-detail img { width:150px; height:110px; object-fit:cover; border-radius:8px; background:var(--wash); }
+    .place-detail h3 { font-size:18px; }
+    .place-detail p { margin-bottom:6px; }
+    .route-actions { display:flex; gap:10px; flex-wrap:wrap; margin-top:14px; }
+    .route-actions a { display:inline-block; background:#f8e6dc; padding:8px 12px; border-radius:8px; text-decoration:none; }
+    .route-actions .map-trigger { padding:8px 12px; background:#f8e6dc; border-radius:8px; text-decoration:none; }
+    .map-trigger { appearance:none; border:0; padding:0; background:transparent; color:#9b3828; font:inherit; font-weight:700; text-decoration:underline; text-decoration-thickness:1px; text-underline-offset:3px; cursor:pointer; }
+    .map-trigger:hover,.map-trigger:focus-visible { color:#6d2118; outline:2px solid #e8b8a8; outline-offset:3px; border-radius:3px; }
+    ul { margin:8px 0 0; padding-left:22px; }
+    footer { margin-top:38px; color:var(--muted); font-size:13px; }
+    @media (max-width:760px) { .day-content { grid-template-columns:1fr; } .gallery { border-left:0; border-top:1px solid var(--line); } }
+    @media (max-width:620px) { .wrap { padding:18px 12px 36px; } header { padding:26px 20px; border-radius:16px; } .day-title { padding:14px 16px; } .schedule th,.schedule td { padding:11px 13px; } .schedule th { width:88px; } .spot img { height:160px; } .place-detail { grid-template-columns:1fr; } .place-detail img { width:100%; height:180px; } }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <h1>京都 × 大阪<br>五天四晚行程</h1>
+      <p class="lede">预计 2026 年 9 月 9 日傍晚抵达关西机场，9 月 13 日中午从关西机场返回上海。</p>
+      <div class="chips"><span class="chip">京都四天</span><span class="chip">大阪一晚</span><span class="chip">公共交通优先</span><span class="chip">轻松版：不含大阪城</span></div>
+    </header>
+
+    <h2>每日行程</h2>
+    <section class="day">
+      <div class="day-title"><strong>9月9日｜抵达京都</strong><span class="stay">住：京都</span></div>
+      <div class="day-content"><table class="schedule"><tr><th>18:30 起</th><td>抵达关西机场，完成入境、取行李与交通卡准备。</td></tr><tr><th>晚上</th><td>关西机场站搭 JR 特急 Haruka 前往京都站，入住后休息。第一晚不安排必须打卡的景点。</td></tr></table><aside class="gallery"><p class="note">抵达日不安排行程，入住后好好休息。</p><div class="route-actions"><a href="https://www.google.com/maps/dir/?api=1&amp;origin=Kansai+International+Airport&amp;destination=Kyoto+Station&amp;travelmode=transit" target="_blank" rel="noopener">机场 → 京都站 ↗</a></div></aside></div>
+    </section>
+    <section class="route-panel" aria-labelledby="route-title">
+      <h2 id="route-title" style="margin-top:0">9月10日｜东山—祗园步行地图</h2>
+      <p class="lede">从清水寺一路向北走到祗园。Google Maps 会显示当天的步行路线与中途站点；实际步行请以地图的实时导航为准。</p>
+      <iframe id="map-d10" class="google-map" title="东山与祗园步行路线" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyDehOTAklxxR7dzc36JlIJqHVD-vAooJ3I&amp;origin=Kiyomizu-dera%2CKyoto&amp;destination=Hanamikoji+Street%2CKyoto&amp;mode=walking&amp;waypoints=Ninenzaka%2CKyoto%7CSannenzaka%2CKyoto%7CHokan-ji%2CKyoto%7CKodaiji%2CKyoto%7CYasaka+Shrine%2CKyoto"></iframe><div id="detail-d10" class="place-detail" aria-live="polite"><p class="note">点击下方行程中的景点名称，地图会定位至该地点，并在这里显示图片与详情。</p></div>
+      <div class="route-actions">
+        <button class="map-trigger" data-map="d10" data-kind="route" data-origin="Kiyomizu-dera, Kyoto" data-destination="Hanamikoji Street, Kyoto" data-mode="walking">在地图显示完整步行路线</button>
+        <button class="map-trigger" data-map="d10" data-kind="route" data-origin="Kyoto Station" data-destination="Kiyomizu-dera, Kyoto" data-mode="transit">在地图显示京都站公交路线</button>
+      </div>
+    </section>
+    <section class="day">
+      <div class="day-title"><strong>9月10日｜东山与祗园</strong><span class="stay">住：京都</span></div>
+      <div class="day-content"><table class="schedule"><tr><th>08:15–09:45</th><td><button class="map-trigger" data-map="d10" data-kind="place" data-query="Kiyomizu-dera, Kyoto">清水寺</button>：看清水舞台、京都市景与音羽瀑布。</td></tr><tr><th>10:00–13:00</th><td><button class="map-trigger" data-map="d10" data-kind="place" data-query="Ninenzaka, Kyoto">二年坂、三年坂、八坂塔</button>周边慢逛；午餐自由安排。</td></tr><tr><th>13:00–16:00</th><td><button class="map-trigger" data-map="d10" data-kind="place" data-query="Kodaiji, Kyoto">高台寺、宁宁之道、石塀小路</button>。若体力一般，可省略高台寺。</td></tr><tr><th>16:00–18:00</th><td><button class="map-trigger" data-map="d10" data-kind="place" data-query="Yasaka Shrine, Kyoto">八坂神社、祗园、花见小路</button>、白川南通；傍晚最适合散步拍照。</td></tr><tr><th>交通</th><td><button class="map-trigger" data-map="d10" data-kind="route" data-origin="Kyoto Station" data-destination="Kiyomizu-dera, Kyoto" data-mode="transit">京都站 → 清水寺公交路线</button>；之后一路由南向北步行；祗园四条站返程。</td></tr></table><aside class="gallery"><article class="spot"><img src="https://datviettour.com.vn/uploads/images/chau-a/nhat-ban/hinh-danh-thang/tour-du-lich-nhat-ban-kham-pha-chua-Kiyomizu-Dera-2.jpg" alt="清水寺"><div class="spot-body"><h3>清水寺与东山</h3><p>山坡木造舞台、古街与祗园。</p><button class="map-trigger" data-map="d10" data-kind="place" data-query="Kiyomizu-dera, Kyoto">在上方地图查看</button> · <a href="https://www.kiyomizudera.or.jp/en/visit/" target="_blank" rel="noopener">官方介绍 ↗</a></div></article></aside></div>
+    </section>
+    <section class="route-panel" aria-labelledby="fushimi-route-title">
+      <h2 id="fushimi-route-title" style="margin-top:0">9月11日｜伏见稻荷—宇治路线</h2>
+      <p class="lede">先从京都站到伏见稻荷，游览后继续前往宇治与平等院。</p>
+      <iframe id="map-d11" class="google-map" title="伏见稻荷到宇治平等院路线" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyDehOTAklxxR7dzc36JlIJqHVD-vAooJ3I&amp;origin=Kyoto+Station&amp;destination=Byodoin+Temple%2CUji&amp;mode=transit&amp;waypoints=Fushimi+Inari+Taisha%2CKyoto"></iframe><div id="detail-d11" class="place-detail" aria-live="polite"><p class="note">点击下方行程中的景点名称，地图会定位至该地点，并在这里显示图片与详情。</p></div>
+      <div class="route-actions"><button class="map-trigger" data-map="d11" data-kind="route" data-origin="Kyoto Station" data-destination="Fushimi Inari Taisha, Kyoto" data-mode="transit">京都站 → 伏见稻荷</button><button class="map-trigger" data-map="d11" data-kind="route" data-origin="Fushimi Inari Taisha, Kyoto" data-destination="Byodoin Temple, Uji" data-mode="transit">伏见稻荷 → 平等院</button></div>
+    </section>
+    <section class="day">
+      <div class="day-title"><strong>9月11日｜伏见稻荷与宇治</strong><span class="stay">住：京都</span></div>
+      <div class="day-content"><table class="schedule"><tr><th>08:00–10:30</th><td><button class="map-trigger" data-map="d11" data-kind="place" data-query="Fushimi Inari Taisha, Kyoto">伏见稻荷大社</button>：千本鸟居走至奥社奉拜所后折返，无须登顶。</td></tr><tr><th>11:15–16:00</th><td><button class="map-trigger" data-map="d11" data-kind="place" data-query="Byodoin Temple, Uji">宇治平等院</button>、宇治川散步与平等院表参道。</td></tr><tr><th>晚上</th><td>回京都后自由安排，可去锦市场周边、寺町通或先斗町。</td></tr><tr><th>交通</th><td><button class="map-trigger" data-map="d11" data-kind="route" data-origin="Kyoto Station" data-destination="Fushimi Inari Taisha, Kyoto" data-mode="transit">京都站 → 伏见稻荷</button>；再点 <button class="map-trigger" data-map="d11" data-kind="route" data-origin="Fushimi Inari Taisha, Kyoto" data-destination="Byodoin Temple, Uji" data-mode="transit">伏见稻荷 → 平等院</button> 查看下一段交通。</td></tr></table><aside class="gallery"><article class="spot"><img src="https://asset.watch.impress.co.jp/img/trw/docs/1651/384/01_l.jpg" alt="伏见稻荷大社"><div class="spot-body"><h3>伏见稻荷大社</h3><p>朱红鸟居通向稻荷山。</p><button class="map-trigger" data-map="d11" data-kind="place" data-query="Fushimi Inari Taisha, Kyoto">在上方地图查看</button> · <a href="https://inari.jp/en/" target="_blank" rel="noopener">官方介绍 ↗</a></div></article><article class="spot"><img src="https://cdn.4travel.jp/img/thumbnails/imk/travelogue_album/11/85/02/650x_11850266.jpg?updated_at=1693536240" alt="宇治平等院凤凰堂"><div class="spot-body"><h3>宇治平等院</h3><p>凤凰堂与池面倒影。</p><button class="map-trigger" data-map="d11" data-kind="place" data-query="Byodoin Temple, Uji">在上方地图查看</button> · <a href="https://www.byodoin.or.jp/en/" target="_blank" rel="noopener">官方介绍 ↗</a></div></article></aside></div>
+    </section>
+    <section class="route-panel" aria-labelledby="arashiyama-route-title">
+      <h2 id="arashiyama-route-title" style="margin-top:0">9月12日｜岚山—金阁寺—大阪路线</h2>
+      <p class="lede">上午游岚山，下午金阁寺，傍晚取行李后转往大阪难波。</p>
+      <iframe id="map-d12" class="google-map" title="岚山到金阁寺再到难波路线" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyDehOTAklxxR7dzc36JlIJqHVD-vAooJ3I&amp;origin=Arashiyama+Bamboo+Grove%2CKyoto&amp;destination=Namba+Station%2COsaka&amp;mode=transit&amp;waypoints=Kinkaku-ji%2CKyoto%7CKyoto+Station"></iframe><div id="detail-d12" class="place-detail" aria-live="polite"><p class="note">点击下方行程中的景点名称，地图会定位至该地点，并在这里显示图片与详情。</p></div>
+      <div class="route-actions"><button class="map-trigger" data-map="d12" data-kind="route" data-origin="Kyoto Station" data-destination="Arashiyama Bamboo Grove, Kyoto" data-mode="transit">京都站 → 岚山</button><button class="map-trigger" data-map="d12" data-kind="route" data-origin="Arashiyama Bamboo Grove, Kyoto" data-destination="Kinkaku-ji, Kyoto" data-mode="transit">岚山 → 金阁寺</button><button class="map-trigger" data-map="d12" data-kind="route" data-origin="Kyoto Station" data-destination="Namba Station, Osaka" data-mode="transit">京都 → 难波</button></div>
+    </section>
+    <section class="day">
+      <div class="day-title"><strong>9月12日｜岚山、金阁寺与大阪夜游</strong><span class="stay">住：大阪难波／心斋桥</span></div>
+      <div class="day-content"><table class="schedule"><tr><th>08:40–12:00</th><td><button class="map-trigger" data-map="d12" data-kind="place" data-query="Arashiyama Bamboo Grove, Kyoto">岚山竹林小径、天龙寺与渡月桥</button>。</td></tr><tr><th>13:15–15:30</th><td>前往 <button class="map-trigger" data-map="d12" data-kind="place" data-query="Kinkaku-ji, Kyoto">金阁寺</button>，参观金阁与镜湖池。</td></tr><tr><th>傍晚</th><td>回京都站取行李，搭 <button class="map-trigger" data-map="d12" data-kind="route" data-origin="Kyoto Station" data-destination="Namba Station, Osaka" data-mode="transit">京都 → 难波路线</button> 入住难波／心斋桥。</td></tr><tr><th>晚上</th><td><button class="map-trigger" data-map="d12" data-kind="place" data-query="Dotonbori, Osaka">心斋桥、戎桥、道顿堀</button>河畔夜游。</td></tr><tr><th>交通</th><td><button class="map-trigger" data-map="d12" data-kind="route" data-origin="Kyoto Station" data-destination="Arashiyama Bamboo Grove, Kyoto" data-mode="transit">京都站 → 岚山</button>；再点 <button class="map-trigger" data-map="d12" data-kind="route" data-origin="Arashiyama Bamboo Grove, Kyoto" data-destination="Kinkaku-ji, Kyoto" data-mode="transit">岚山 → 金阁寺</button> 查看下一段交通。</td></tr></table><aside class="gallery"><article class="spot"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/p/pirooh/20230228/20230228082514.jpg" alt="岚山竹林"><div class="spot-body"><h3>岚山与天龙寺</h3><p>竹林、山景、渡月桥与庭园。</p><button class="map-trigger" data-map="d12" data-kind="place" data-query="Arashiyama Bamboo Grove, Kyoto">在上方地图查看</button> · <a href="https://www.tenryuji.com/en/visit/index.html" target="_blank" rel="noopener">官方介绍 ↗</a></div></article><article class="spot"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Kinkaku3402CBcropped.jpg" alt="金阁寺"><div class="spot-body"><h3>金阁寺</h3><p>金色楼阁映在镜湖池中。</p><button class="map-trigger" data-map="d12" data-kind="place" data-query="Kinkaku-ji, Kyoto">在上方地图查看</button> · <a href="https://kyoto.travel/en/shrine_temple/165.html?wovnDisableTranslation=true" target="_blank" rel="noopener">官方介绍 ↗</a></div></article><article class="spot"><img src="https://cassette.sphdigital.com.sg/image/fzine/9610d89820496a060d00361db8d8e8c251cab7499ce9e52056474368eaaf862a?q=85&amp;w=660" alt="道顿堀夜景"><div class="spot-body"><h3>道顿堀与心斋桥</h3><p>大阪最热闹的夜间街区。</p><button class="map-trigger" data-map="d12" data-kind="place" data-query="Dotonbori, Osaka">在上方地图查看</button> · <a href="https://osaka-info.jp/en/spot/dotonbori/" target="_blank" rel="noopener">官方介绍 ↗</a></div></article></aside></div>
+    </section>
+    <section class="day">
+      <div class="day-title"><strong>9月13日｜前往关西机场</strong><span class="stay">返程</span></div>
+      <div class="day-content"><table class="schedule"><tr><th>08:15 前后</th><td>从难波酒店出发，搭南海电铁前往关西机场。</td></tr><tr><th>约 09:00</th><td>抵达机场，办理国际航班手续、安检与出境。</td></tr><tr><th>12:30</th><td>预计起飞返回上海。</td></tr></table><aside class="gallery"><p class="note">返程日不安排行程，确保从容办理登机。</p><div class="route-actions"><a href="https://www.google.com/maps/dir/?api=1&amp;origin=Namba+Station,+Osaka&amp;destination=Kansai+International+Airport&amp;travelmode=transit" target="_blank" rel="noopener">难波 → 关西机场 ↗</a></div></aside></div>
+    </section>
+
+    <h2>交通提醒</h2>
+    <div class="transport"><ul><li>关西机场到京都：JR 特急 Haruka 直达京都站，通常约 75 分钟。</li><li>京都市内：优先使用 ICOCA／手机 Suica；东山与岚山部分路段用巴士衔接。</li><li>京都到大阪：JR 新快速是最直接的选择之一，约半小时。</li><li>大阪难波到关西机场：南海电铁最顺路；返程日建议 08:15 左右离开酒店。</li></ul></div>
+    <footer>出发前一周请再次核对各景点的开放时间、临时活动与列车班次。此版本为分享用行程初稿，可继续补充酒店、餐厅与预约项目。</footer>
+  </main>
+  <script>
+    const travelMapKey = 'AIzaSyDehOTAklxxR7dzc36JlIJqHVD-vAooJ3I';
+    const mapsByDay = {};
+    const days = {
+      d10: { center: {lat: 35.000, lng: 135.781}, zoom: 14, stops: [
+        {q:'Kiyomizu-dera, Kyoto', n:'1', title:'清水寺', image:'https://datviettour.com.vn/uploads/images/chau-a/nhat-ban/hinh-danh-thang/tour-du-lich-nhat-ban-kham-pha-chua-Kiyomizu-Dera-2.jpg', text:'山坡上的木造舞台，可眺望京都市区；建议早上先到。', link:'https://www.kiyomizudera.or.jp/en/visit/', pos:{lat:34.9949,lng:135.7850}},
+        {q:'Ninenzaka, Kyoto', n:'2', title:'二年坂、三年坂', image:'https://www.kimonoichiba.com/media/wp-content/uploads/2022/09/27110352/image001-4.png', text:'石板坡道、传统町屋与小店最集中的一段。', link:'https://kyoto.travel/en/areas/higashiyama/', pos:{lat:34.9984,lng:135.7829}},
+        {q:'Hokan-ji, Kyoto', n:'3', title:'八坂塔', image:'https://www.kimonoichiba.com/media/wp-content/uploads/2022/09/27110352/image001-4.png', text:'法观寺五重塔是东山古街的经典取景点。', link:'https://kyoto.travel/en/areas/higashiyama/', pos:{lat:34.9994,lng:135.7815}},
+        {q:'Kodaiji, Kyoto', n:'4', title:'高台寺、宁宁之道', image:'https://www.kimonoichiba.com/media/wp-content/uploads/2022/09/27110352/image001-4.png', text:'庭园与安静石板路，适合在午后放慢脚步。', link:'https://www.kodaiji.com/eng/', pos:{lat:35.0010,lng:135.7834}},
+        {q:'Ishibe-koji, Kyoto', n:'5', title:'石塀小路', image:'https://www.kimonoichiba.com/media/wp-content/uploads/2022/09/27110352/image001-4.png', text:'短而幽静的传统小巷，适合顺路进入看看。', link:'https://kyoto.travel/en/areas/higashiyama/', pos:{lat:35.0017,lng:135.7809}},
+        {q:'Yasaka Shrine, Kyoto', n:'6', title:'八坂神社', image:'https://www.kimonoichiba.com/media/wp-content/uploads/2022/09/27110352/image001-4.png', text:'祗园的标志性神社，也是东山步行线的收束点。', link:'https://www.yasaka-jinja.or.jp/', pos:{lat:35.0037,lng:135.7786}},
+        {q:'Hanamikoji Street, Kyoto', n:'7', title:'花见小路、祗园', image:'https://www.kimonoichiba.com/media/wp-content/uploads/2022/09/27110352/image001-4.png', text:'傍晚适合散步看传统街景；请尊重当地拍摄规则。', link:'https://kyoto.travel/en/areas/gion/', pos:{lat:35.0030,lng:135.7756}}
+      ]},
+      d11: { center: {lat: 34.930, lng: 135.790}, zoom: 12, stops: [
+        {q:'Kyoto Station', n:'A', title:'京都站', image:'', text:'当天从这里搭 JR 奈良线前往伏见稻荷。', link:'https://kyoto.travel/en/getting-around/', pos:{lat:34.9858,lng:135.7588}},
+        {q:'Fushimi Inari Taisha, Kyoto', n:'1', title:'伏见稻荷大社', image:'https://asset.watch.impress.co.jp/img/trw/docs/1651/384/01_l.jpg', text:'千本鸟居通向稻荷山；行程建议走到奥社奉拜所后折返。', link:'https://inari.jp/en/', pos:{lat:34.9671,lng:135.7727}},
+        {q:'Byodoin Temple, Uji', n:'2', title:'宇治平等院', image:'https://cdn.4travel.jp/img/thumbnails/imk/travelogue_album/11/85/02/650x_11850266.jpg?updated_at=1693536240', text:'凤凰堂与池面倒影是宇治最有代表性的景观。', link:'https://www.byodoin.or.jp/en/', pos:{lat:34.8894,lng:135.8072}}
+      ]},
+      d12: { center: {lat: 34.900, lng: 135.640}, zoom: 10, stops: [
+        {q:'Arashiyama Bamboo Grove, Kyoto', n:'1', title:'岚山竹林与天龙寺', image:'https://cdn-ak.f.st-hatena.com/images/fotolife/p/pirooh/20230228/20230228082514.jpg', text:'竹林、天龙寺庭园与渡月桥集中在这片区域，上午抵达最舒服。', link:'https://www.tenryuji.com/en/visit/index.html', pos:{lat:35.0168,lng:135.6713}},
+        {q:'Kinkaku-ji, Kyoto', n:'2', title:'金阁寺', image:'https://upload.wikimedia.org/wikipedia/commons/c/c9/Kinkaku3402CBcropped.jpg', text:'金色楼阁映在镜湖池中，一小时左右可完成参观。', link:'https://kyoto.travel/en/shrine_temple/165.html?wovnDisableTranslation=true', pos:{lat:35.0394,lng:135.7292}},
+        {q:'Kyoto Station', n:'A', title:'京都站', image:'', text:'下午回此处取行李，再搭车前往大阪。', link:'https://kyoto.travel/en/getting-around/', pos:{lat:34.9858,lng:135.7588}},
+        {q:'Namba Station, Osaka', n:'3', title:'难波', image:'', text:'入住大阪后的交通枢纽，步行可到心斋桥与道顿堀。', link:'https://osaka-info.jp/en/', pos:{lat:34.6665,lng:135.5011}},
+        {q:'Dotonbori, Osaka', n:'4', title:'道顿堀与心斋桥', image:'https://cassette.sphdigital.com.sg/image/fzine/9610d89820496a060d00361db8d8e8c251cab7499ce9e52056474368eaaf862a?q=85&w=660', text:'大阪最热闹的夜间街区，商店街、戎桥与河畔都在附近。', link:'https://osaka-info.jp/en/spot/dotonbori/', pos:{lat:34.6687,lng:135.5013}}
+      ]}
+    };
+
+    function showDetail(day, stop) {
+      const detail = document.getElementById('detail-' + day);
+      detail.innerHTML = (stop.image ? '<img src="' + stop.image + '" alt="' + stop.title + '">' : '') + '<div><h3>' + stop.title + '</h3><p>' + stop.text + '</p><a href="' + stop.link + '" target="_blank" rel="noopener">查看官方介绍 ↗</a></div>';
+    }
+
+    function findStop(day, query) {
+      return days[day].stops.find(stop => stop.q === query);
+    }
+
+    async function showRoute(day, origin, destination, mode, intermediates) {
+      const state = mapsByDay[day];
+      if (!state) return;
+      state.polylines.forEach(line => line.setMap(null));
+      try {
+        const request = { origin, destination, travelMode: mode.toUpperCase(), fields: ['path'] };
+        if (intermediates && intermediates.length) request.intermediates = intermediates.map(location => ({ location }));
+        const { routes } = await state.Route.computeRoutes(request);
+        if (!routes || !routes.length) return;
+        state.polylines = routes[0].createPolylines();
+        state.polylines.forEach(line => line.setMap(state.map));
+        const bounds = new google.maps.LatLngBounds();
+        routes[0].path.forEach(point => bounds.extend(point));
+        state.map.fitBounds(bounds, 48);
+      } catch (error) {
+        console.warn('Route could not be drawn', error);
+      }
+    }
+
+    async function initTravelMaps() {
+      const [{ Map }, { Route }] = await Promise.all([google.maps.importLibrary('maps'), google.maps.importLibrary('routes')]);
+      Object.entries(days).forEach(([day, data]) => {
+        const map = new Map(document.getElementById('map-' + day), { center: data.center, zoom: data.zoom, mapTypeControl: false, streetViewControl: false, fullscreenControl: true });
+        mapsByDay[day] = { map, Route, polylines: [] };
+        data.stops.forEach(stop => {
+          const marker = new google.maps.Marker({ position: stop.pos, map, label: stop.n, title: stop.title });
+          marker.addListener('click', () => { showDetail(day, stop); map.panTo(stop.pos); map.setZoom(Math.max(map.getZoom(), 14)); });
+        });
+      });
+      await Promise.all([
+        showRoute('d10', 'Kiyomizu-dera, Kyoto', 'Hanamikoji Street, Kyoto', 'WALKING', ['Ninenzaka, Kyoto','Sannenzaka, Kyoto','Hokan-ji, Kyoto','Kodaiji, Kyoto','Yasaka Shrine, Kyoto']),
+        showRoute('d11', 'Kyoto Station', 'Byodoin Temple, Uji', 'TRANSIT', ['Fushimi Inari Taisha, Kyoto']),
+        showRoute('d12', 'Arashiyama Bamboo Grove, Kyoto', 'Namba Station, Osaka', 'TRANSIT', ['Kinkaku-ji, Kyoto','Kyoto Station'])
+      ]);
+      document.querySelectorAll('.map-trigger').forEach(trigger => trigger.addEventListener('click', async () => {
+        const day = trigger.dataset.map;
+        const state = mapsByDay[day];
+        if (!state) return;
+        if (trigger.dataset.kind === 'place') {
+          const stop = findStop(day, trigger.dataset.query);
+          if (stop) { showDetail(day, stop); state.map.panTo(stop.pos); state.map.setZoom(15); }
+        } else {
+          await showRoute(day, trigger.dataset.origin, trigger.dataset.destination, trigger.dataset.mode || 'TRANSIT');
+        }
+        document.getElementById('map-' + day).scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }));
+    }
+    window.initTravelMaps = initTravelMaps;
+  </script>
+  <script>
+    document.querySelectorAll('.map-trigger').forEach(trigger => trigger.addEventListener('click', () => {
+      const day = trigger.dataset.map;
+      const map = document.getElementById('map-' + day);
+      if (!map) return;
+      if (trigger.dataset.kind === 'place') {
+        const stop = findStop(day, trigger.dataset.query);
+        if (stop) showDetail(day, stop);
+        map.src = 'https://www.google.com/maps/embed/v1/place?key=' + travelMapKey + '&q=' + encodeURIComponent(trigger.dataset.query);
+      } else {
+        map.src = 'https://www.google.com/maps/embed/v1/directions?key=' + travelMapKey + '&origin=' + encodeURIComponent(trigger.dataset.origin) + '&destination=' + encodeURIComponent(trigger.dataset.destination) + '&mode=' + encodeURIComponent(trigger.dataset.mode || 'transit');
+      }
+      map.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }));
+  </script>
+</body>
+</html>
